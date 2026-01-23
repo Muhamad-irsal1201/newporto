@@ -448,7 +448,7 @@
         
         .project-card {
             position: relative;
-            height: 400px;
+            min-height: 420px;
             overflow: hidden;
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
