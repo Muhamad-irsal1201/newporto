@@ -449,7 +449,8 @@
         .project-card {
             position: relative;
             min-height: 420px;
-            overflow: hidden;
+            height: auto;
+            overflow: visible;
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
             cursor: pointer;
@@ -474,7 +475,7 @@
             padding: 2rem;
             position: relative;
             z-index: 2;
-            overflow: visible;
+            
         }
         
         .project-tags {
