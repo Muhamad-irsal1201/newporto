@@ -390,6 +390,24 @@
             margin-bottom: 2rem;
         }
         
+        .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-number {
+    color: var(--primary-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+
         /* Skills Section */
         .skills-grid {
             display: grid;
