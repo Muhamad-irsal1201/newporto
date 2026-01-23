@@ -29,9 +29,6 @@
             /* Transitions */
             --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-            /* navbar */
-            --navbar-height: 96px;
         }
         
         * {
@@ -40,10 +37,6 @@
             box-sizing: border-box;
         }
         
-        html, body {
-        overflow-x: hidden;
-        }
-
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 80px;
@@ -130,7 +123,6 @@
             background: rgba(10, 14, 23, 0.8);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
-            height: var(--navbar-height);
         }
         
         .nav-container {
@@ -214,23 +206,14 @@
         
         /* Hero Section */
         .hero {
-            min-height: calc(100dvh - var(--navbar-height));
+            min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 0 2rem;
             padding-top: 80px;
             position: relative;
-            padding-top: var(--navbar-height);
         }
         
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-
         .hero-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -239,14 +222,13 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
-            text-align: left;
         }
         
         .hero-content h1 {
             font-family: 'Poppins', sans-serif;
-            font-size: clamp(1.8rem, 5vw, 3.5rem);
+            font-size: 3.5rem;
             font-weight: 800;
-            line-height: 1.25;
+            line-height: 1.2;
             margin-bottom: 1.5rem;
             background: linear-gradient(to right, #fff, var(--primary-cyan));
             -webkit-background-clip: text;
@@ -255,7 +237,7 @@
         }
         
         .hero-tagline {
-            font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 2rem;
             line-height: 1.6;
@@ -279,14 +261,11 @@
         
         .hero-3d-container {
             position: relative;
-            height: auto;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
             perspective: 1000px;
-            max-width: 320px;
-             width: 100%;
-             aspect-ratio: 3 / 4;
         }
         
         .floating-card-3d {
@@ -312,27 +291,6 @@
             animation: float 6s ease-in-out infinite reverse;
             animation-delay: 1s;
         }
-
-        .card-3d-1::before,
-.card-3d-2::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    border-radius: 24px;
-    transform: translateZ(30px);
-}
-
-/* Image masing-masing card */
-.card-3d-1::before {
-    background-image: url('../img/hero-1.png');
-}
-
-.card-3d-2::before {
-    background-image: url('../img/profile.jpg');
-}
-
         
         /* Sections */
         section {
@@ -757,38 +715,3 @@
                 gap: 2rem;
             }
         }
-
-        @media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        align-items: flex-start;   /* ⬅️ penting */
-    }
-
-    /* TEKS TETAP KIRI */
-    .hero-content {
-        text-align: left;
-        padding: 0 1rem;
-    }
-
-    /* BUTTON BOLEH CENTER */
-    .hero-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    /* FOTO / 3D CARD CENTER */
-    .hero-3d-container {
-        margin: 0 auto;
-        max-width: 260px;
-    }
-}
-
-@media (max-width: 768px) {
-    .floating-card-3d {
-        transform: none !important;
-        animation: none;
-    }
-}
