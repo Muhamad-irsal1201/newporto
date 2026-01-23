@@ -797,7 +797,7 @@
         body.light .about-text,
         body.light .project-content p {
         color: var(--text-secondary);
-}
+        }
 
         body.light .card-3d-2 {
         background-image: url("../img/profile.jpg");
@@ -805,6 +805,10 @@
         background-position: center;
         background-repeat: no-repeat;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        body.light p {
+         color: var(--text-secondary);
         }
 
 
