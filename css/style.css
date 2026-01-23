@@ -869,7 +869,7 @@
         --text-secondary: rgba(17, 24, 39, 0.7);
         --icon-color: #000000;        /* HITAM TEGAS */
         --icon-bg: rgba(6, 0, 0, 0.08);
-        --input-text: #111827;              /* hitam */
+        --input-text: #000000;              /* hitam */
         --input-placeholder: rgba(17,24,39,0.5);
         --input-bg: rgba(0,0,0,0.04);
         --input-border: rgba(0,0,0,0.15);
