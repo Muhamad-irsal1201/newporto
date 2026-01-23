@@ -1,22 +1,5 @@
 :root {
 
-            /* Light Mode */
-            --bg-main: #f9fafb;
-            --bg-card: #ffffff;
-            --text-main: #111827;
-            --text-secondary: #4b5563;
-            --border-color: #e5e7eb;
-            --accent: #22d3ee;
-            }
-
-            [data-theme="dark"] {
-            --bg-main: #0f172a;
-            --bg-card: #020617;
-            --text-main: #f8fafc;
-            --text-secondary: rgba(255,255,255,0.65);
-            --border-color: #1e293b;
-            --accent: #22d3ee;
-
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.7);
             --navbar-height: 96px;
