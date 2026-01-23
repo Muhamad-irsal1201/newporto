@@ -246,9 +246,14 @@
         
         .hero-tagline {
             font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--text-secondary);
             margin-bottom: 2rem;
             line-height: 1.6;
+        }
+
+        .hero-name {
+        color: var(--primary-cyan);
+        font-weight: 600;
         }
         
         .hero-badges {
