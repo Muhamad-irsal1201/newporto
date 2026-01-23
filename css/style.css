@@ -142,8 +142,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+             transition: transform 0.3s ease;
         }
         
+        .navbar:hover .nav-container {
+         transform: scaleX(0.97);
+        }
+
         .logo {
             font-family: 'Poppins', sans-serif;
             font-size: 1.8rem;
@@ -201,20 +206,39 @@
         }
         
         .nav-contact {
-            background: var(--gradient-primary);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition-smooth);
+        position: relative;
+        background: var(--gradient-primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: box-shadow 0.3s ease;
+        overflow: hidden;
         }
-        
+
+        .nav-contact::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255,255,255,0.08);
+        transform: scale(0.92);
+        transition: transform 0.3s ease;
+        border-radius: inherit;
+        }
+
         .nav-contact:hover {
             transform: translateY(-3px);
             box-shadow: var(--shadow-neon);
         }
         
+        .nav-contact:hover::before {
+        transform: scale(1);
+        }
+
+        .nav-contact:hover {
+        box-shadow: var(--shadow-neon);
+        }
         /* Hero Section */
         .hero {
              min-height: calc(100vh - var(--navbar-height));
