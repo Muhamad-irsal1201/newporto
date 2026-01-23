@@ -10,20 +10,23 @@
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        
-        const rotateY = (x - centerX) / 25;
-        const rotateX = (centerY - y) / 25;
-        
+
+        let rotateY = (x - centerX) / 40;
+        let rotateX = (centerY - y) / 40;
+
+        rotateX = Math.max(-6, Math.min(6, rotateX));
+        rotateY = Math.max(-6, Math.min(6, rotateY));
+
         card.style.transform =
           `perspective(1000px)
            rotateX(${rotateX}deg)
            rotateY(${rotateY}deg)
-           translateY(-8px)`;
+           translateY(-4px)`;
     });
-    
+
     card.addEventListener('mouseleave', () => {
         card.style.transform =
           'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
