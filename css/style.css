@@ -1,5 +1,9 @@
 :root {
 
+            --input-text: #ffffff;              /* dark mode */
+            --input-placeholder: rgba(255,255,255,0.6);
+            --input-bg: rgba(255,255,255,0.08);
+            --input-border: rgba(255,255,255,0.18);
             --icon-color: #5d5d5e;      /* abu terang → dark mode */
             --icon-bg: rgba(255,255,255,0.08);
             --text-primary: #ffffff;
@@ -623,19 +627,24 @@
         .form-control {
             width: 100%;
             padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
+            background:var(--input-bg);
             border: 1px solid var(--glass-border);
             border-radius: 12px;
-            color: white;
+            color:var(--input-text);
             font-family: inherit;
             font-size: 1rem;
             transition: var(--transition-smooth);
         }
         
+        .form-control::placeholder {
+        color: var(--input-placeholder);
+        }
+
         .form-control:focus {
             outline: none;
             border-color: var(--primary-cyan);
             box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.1);
+            background: var(--input-bg);
         }
 
         .social-link {
@@ -860,6 +869,10 @@
         --text-secondary: rgba(17, 24, 39, 0.7);
         --icon-color: #000000;        /* HITAM TEGAS */
         --icon-bg: rgba(6, 0, 0, 0.08);
+        --input-text: #111827;              /* hitam */
+        --input-placeholder: rgba(17,24,39,0.5);
+        --input-bg: rgba(0,0,0,0.04);
+        --input-border: rgba(0,0,0,0.15);
         }
 
 
