@@ -244,3 +244,11 @@ window.addEventListener("load", () => {
     setLanguage(savedLang);
 });
 
+document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+  const key = el.getAttribute("data-i18n-placeholder");
+  if (translations[lang][key]) {
+    el.placeholder = translations[lang][key];
+  }
+});
+
+
