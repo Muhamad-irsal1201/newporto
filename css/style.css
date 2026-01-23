@@ -1,4 +1,6 @@
 :root {
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
             --navbar-height: 96px;
             /* Color System - Futuristic Cyan/Purple */
             --primary-cyan: #00f2fe;
@@ -46,7 +48,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background: var(--gradient-dark);
-            color: #fff;
+            color: var(--text-primary);
             overflow-x: hidden;
             position: relative;
             min-height: 100vh;
@@ -232,7 +234,11 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 1.5rem;
-            background: linear-gradient(to right, #fff, var(--primary-cyan));
+            background: linear-gradient(
+              to right,
+             var(--text-primary),
+             var(--primary-cyan)
+    );
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -731,6 +737,9 @@
 
         --gradient-dark: linear-gradient(135deg, #f4f6fb, #ffffff);
 
+        --text-primary: #111111;
+        --text-secondary: rgba(0, 0, 0, 0.7);
+
         color: #111;
         }
 
@@ -761,5 +770,20 @@
             content: "\f185"; /* fa-sun */
         }
 
+        body.light .section-subtitle,
+        body.light .about-text,
+        body.light .project-content p {
+        color: var(--text-secondary);
+}
 
-        
+        body.light .card-3d-2 {
+        background-image: url("../img/profile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+
+
+
