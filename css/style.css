@@ -1,5 +1,6 @@
 :root {
 
+            --icon-color: #ffffff; /* dark mode */
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.7);
             --navbar-height: 96px;
@@ -635,6 +636,18 @@
             border-color: var(--primary-cyan);
             box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.1);
         }
+
+        .social-link {
+        color: var(--icon-color);
+        font-size: 1.5rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-link:hover {
+        color: var(--primary-cyan);
+        transform: translateY(-3px);
+        }
+
         
         /* Footer */
         .footer {
@@ -831,6 +844,7 @@
         body.light-mode {
         --text-primary: #111827;
         --text-secondary: rgba(17, 24, 39, 0.7);
+        --icon-color: #111827; /* hitam / abu gelap */
         }
 
 
