@@ -65,8 +65,8 @@
         
         body {
             font-family: 'Inter', sans-serif;
-           background: var(--bg-main);
-            color: var(--text-main);
+            background: var(--gradient-dark);
+            color: var(--text-primary);
             overflow-x: hidden;
             position: relative;
             min-height: 100vh;
@@ -501,13 +501,6 @@
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
             cursor: pointer;
-            background: var(--bg-card);
-            color: var(--text-main);
-            border: 1px solid var(--border-color);
-        }
-
-        .project-card p {
-        color: var(--text-secondary);
         }
         
         .project-card:hover {
@@ -568,14 +561,8 @@
             padding-left: 80px;
             padding-bottom: 3rem;
             position: relative;
-            background: var(--bg-card);
-            color: var(--text-main);
         }
         
-        .timeline-item span,
-        .timeline-item p {
-        color: var(--text-secondary);
-        }
         .timeline-dot {
             position: absolute;
             left: 22px;
@@ -628,13 +615,6 @@
             padding: 3rem;
         }
         
-        .contact-form input,
-        .contact-form textarea {
-        background: var(--bg-card);
-        color: var(--text-main);
-        border: 1px solid var(--border-color);
-        }
-
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -662,8 +642,6 @@
             padding: 4rem 2rem;
             border-top: 1px solid var(--glass-border);
             margin-top: 4rem;
-            background: var(--bg-card);
-            color: var(--text-secondary);
         }
         
         .footer-content {
@@ -850,11 +828,6 @@
         body.light p {
          color: var(--text-secondary);
         }
-
-        .text-secondary {
-         color: var(--text-secondary);
-        }
-
 
 
 
