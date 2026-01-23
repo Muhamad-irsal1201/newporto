@@ -523,6 +523,11 @@
             font-size: 0.8rem;
         }
         
+        .project-desc {
+        color: var(--text-secondary);
+        margin: 1rem 0;
+        }
+
         /* Experience Section */
         .timeline {
             max-width: 800px;
@@ -812,6 +817,10 @@
          color: var(--text-secondary);
         }
 
+        body.light-mode {
+        --text-primary: #111827;
+        --text-secondary: rgba(17, 24, 39, 0.7);
+        }
 
 
 
