@@ -194,3 +194,53 @@
             body.classList.toggle("light");
             body.classList.toggle("dark");
         });
+
+        // language
+        const translations = {
+    en: {
+        hero_title: "Building Digital Experiences That Inspire & Transform",
+        hero_desc: "I'm Muhamad Irsal, a passionate Developer specializing in modern web technologies.",
+        about_title: "About Me",
+        projects_title: "Projects",
+        contact_title: "Contact Me"
+    },
+
+    id: {
+        hero_title: "Membangun Pengalaman Digital yang Menginspirasi & Berdampak",
+        hero_desc: "Saya Muhamad Irsal, seorang Developer yang fokus pada teknologi web modern.",
+        about_title: "Tentang Saya",
+        projects_title: "Proyek",
+        contact_title: "Hubungi Saya"
+    },
+
+    jp: {
+        hero_title: "人々を感動させ、変革するデジタル体験を構築",
+        hero_desc: "私はムハマド・イルサル。最新のWeb技術を専門とする開発者です。",
+        about_title: "自己紹介",
+        projects_title: "プロジェクト",
+        contact_title: "お問い合わせ"
+    }
+};
+
+function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+            el.innerText = translations[lang][key];
+        }
+    });
+
+    localStorage.setItem("language", lang);
+}
+
+document.querySelectorAll(".lang-switcher button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        setLanguage(btn.dataset.lang);
+    });
+});
+
+window.addEventListener("load", () => {
+    const savedLang = localStorage.getItem("language") || "en";
+    setLanguage(savedLang);
+});
+

@@ -243,6 +243,27 @@
         .nav-contact:hover {
         box-shadow: var(--shadow-neon);
         }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-switcher button {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-color);
+            padding: 0.4rem 0.6rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .lang-switcher button:hover {
+            background: var(--primary-cyan);
+            color: #000;
+        }
+
         /* Hero Section */
         .hero {
              min-height: calc(100vh - var(--navbar-height));
