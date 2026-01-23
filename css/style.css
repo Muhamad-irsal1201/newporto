@@ -848,8 +848,8 @@
         body.light-mode {
         --text-primary: #111827;
         --text-secondary: rgba(17, 24, 39, 0.7);
-        --icon-color: #111827;     /* hitam → light mode */
-        --icon-bg: rgba(0,0,0,0.05);
+        --icon-color: #0f172a;        /* HITAM TEGAS */
+        --icon-bg: rgba(0,0,0,0.08);
         }
 
 
