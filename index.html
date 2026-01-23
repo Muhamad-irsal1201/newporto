@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Irsal | Futuristic Digital Portfolio</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Css Conection-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    <body>
+    <!-- Background Polymorphic Shapes -->
+    <div class="polymorphic-bg">
+        <div class="polymorph"></div>
+        <div class="polymorph"></div>
+        <div class="polymorph"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar glass-card">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>IRSAL</span>
+                <div class="logo-dot"></div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="#contact" class="nav-contact">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Building Digital Experiences That Inspire & Transform</h1>
+                <p class="hero-tagline">
+                    I'm <span style="color: var(--primary-cyan); font-weight: 600;">Muhamad Irsal</span>, 
+                    a passionate Developer & Specializing in modern web technologies, 
+                    3D graphics, and interactive experiences that push boundaries.
+                </p>
+                
+                <div class="hero-badges">
+                    <span class="badge">Web Developer</span>
+                    <span class="badge">UI/UX Designer</span>
+                    <span class="badge">Video Editor</span>
+                    <span class="badge">Creative Technologist</span>
+                </div>
+                
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#projects" class="nav-contact" style="background: var(--gradient-cyan);">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                <a href="file/CV.pdf"
+                    class="nav-contact"
+                    download
+                    onclick="console.log('CV Downloaded')">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-3d-container">
+                <div class="floating-card-3d glass-card card-3d-1"></div>
+                <div class="floating-card-3d glass-card card-3d-2"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p class="section-subtitle">Crafting digital solutions with passion and precision</p>
+        </div>
+        
+        <div class="about-grid">
+            <div class="about-image" data-aos="fade-right">
+                <div class="avatar-3d"></div>
+            </div>
+            
+            <div class="about-content glass-card" data-aos="fade-left">
+                <h3>Creative Digital Architect</h3>
+                <p class="about-text">
+                    With expertise spanning web development, video editing, and graphic design, 
+                    I create digital experiences that are both visually stunning and functionally 
+                    robust. My approach combines technical precision with creative innovation.
+                </p>
+                <p class="about-text">
+                    Currently serving as a mentor at Wowlab, I guide Japanese students in 
+                    navigating the IT industry and preparing for international tech careers. 
+                    This role allows me to share knowledge while staying at the forefront of 
+                    technological advancements.
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem;">
+                    <div>
+                        <h4 style="color: var(--primary-cyan); margin-bottom: 0.5rem;">1+ Years</h4>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Professional Experience</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-cyan); margin-bottom: 0.5rem;">10+ Projects</h4>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Successfully Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" style="background: rgba(0,0,0,0.2);">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Technical Expertise</h2>
+            <p class="section-subtitle">Mastering the tools and technologies that power modern digital experiences</p>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-category glass-card" data-aos="fade-up">
+                <div class="skill-icon-3d">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>HTML5 / CSS3</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>JavaScript ES6+</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>React / Vue.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-icon-3d">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend & Database</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>PHP / Laravel</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>Node.js / Express</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>MySQL / MongoDB</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-icon-3d">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Creative Design</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>UI/UX Design</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>Adobe Creative Suite</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    
+                    <div class="skill-item">
+                        <span>Video Editing</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Showcasing innovative solutions that blend creativity with technology</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card glass-card" data-aos="fade-up">
+                <img src="../img/portofolio.png" alt="Portfolio Platform" class="project-image">
+                <div class="project-content">
+                    <h3>3D Interactive Portfolio</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin: 1rem 0;">
+                        Modern portfolio website with 3D elements, glassmorphism effects, and smooth animations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Html</span>
+                        <span class="project-tag">Css</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Bootsrap5</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="../img/Bakery.png" alt="Bakery System" class="project-image">
+                <div class="project-content">
+                    <h3>Bakery Management System</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin: 1rem 0;">
+                        Complete inventory and sales management solution with real-time analytics dashboard.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">MySQL</span>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="../img/Sertifikat-Muhammad Irsal.jpg" alt="Mentorship Program" class="project-image">
+                <div class="project-content">
+                    <h3>IT Career Mentorship</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin: 1rem 0;">
+                        Comprehensive mentorship program preparing students for international IT careers.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Curriculum</span>
+                        <span class="project-tag">Workshops</span>
+                        <span class="project-tag">Career Guidance</span>
+                        <span class="project-tag">Certification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" style="background: rgba(0,0,0,0.2);">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Experience & Education</h2>
+            <p class="section-subtitle">My journey through technology and education</p>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-dot"></div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--primary-cyan);">IT Mentor & Educator</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0;">Wowlab Japan</p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">2025 - Present</p>
+                    <p style="margin-top: 1rem;">Guiding Japanese students in IT career development and technical skills.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--primary-cyan);">Full Stack Developer</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0;">Freelance & Contract</p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">2023 - Present</p>
+                    <p style="margin-top: 1rem;">Developing web applications and digital solutions for various clients.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--primary-cyan);">Bachelor's in Information Technology</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0;">University Graduate</p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">2021 - 2025</p>
+                    <p style="margin-top: 1rem;">Specialized in web technologies and software development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-method glass-card" data-aos="fade-right">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:irsalmuhamad2002@gmail.com" style="color: var(--primary-cyan); text-decoration: none;">
+                            irsalmuhamad2002@gmail.com
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-method glass-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone / WhatsApp</h4>
+                        <a href="https://wa.me/6288210749273" style="color: var(--primary-cyan); text-decoration: none;">
+                            +62 882-1074-9273
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-method glass-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p style="color: rgba(255,255,255,0.8);">Available for remote work worldwide</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card" style="padding: 2rem;" data-aos="fade-right" data-aos-delay="300">
+                    <h4 style="margin-bottom: 1rem;">Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Muhamad-irsal1201" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/irsal-muhamad-311a1b333" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/m_irsal12" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@xxRaizelxx" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form glass-card" data-aos="fade-left">
+                <h3 style="margin-bottom: 2rem;">Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="nav-contact" style="width: 100%; background: var(--gradient-cyan);">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <a href="#" class="logo">
+                    <span>MUHAMAD IRSAL</span>
+                    <div class="logo-dot"></div>
+                </a>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 1rem; max-width: 400px;">
+                    Creating exceptional digital experiences through innovative web development 
+                    and creative design solutions.
+                </p>
+            </div>
+            
+            <div>
+                <h4 style="margin-bottom: 1.5rem;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.75rem;">
+                        <a href="#home" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a>
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <a href="#about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About</a>
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <a href="#projects" style="color: rgba(255,255,255,0.7); text-decoration: none;">Projects</a>
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <a href="#contact" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 style="margin-bottom: 1.5rem;">Services</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.7);">Web Development</li>
+                    <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.7);">UI/UX Design</li>
+                    <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.7);">Video Production</li>
+                    <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.7);">IT Consulting</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: rgba(255,255,255,0.5);">
+                &copy; 2025 Muhamad Irsal. All rights reserved. 
+                <span style="color: var(--primary-cyan);">Made with passion and innovation.</span>
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="../js/script.js"></script>
+    </body>
+    </html>
