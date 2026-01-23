@@ -474,6 +474,7 @@
             padding: 2rem;
             position: relative;
             z-index: 2;
+            overflow: visible;
         }
         
         .project-tags {
