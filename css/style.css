@@ -239,6 +239,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
+            text-align: left;
         }
         
         .hero-content h1 {
@@ -758,28 +759,29 @@
         }
 
         @media (max-width: 768px) {
-    .hero {
-        padding-top: calc(var(--navbar-height) + 1rem);
-        padding-bottom: 3rem;
-        align-items: flex-start;
-    }
-
     .hero-container {
         grid-template-columns: 1fr;
         gap: 2rem;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
+        align-items: flex-start;   /* ⬅️ penting */
     }
 
+    /* TEKS TETAP KIRI */
     .hero-content {
-        width: 100%;
+        text-align: left;
         padding: 0 1rem;
     }
-}
 
-@media (max-width: 768px) {
+    /* BUTTON BOLEH CENTER */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* FOTO / 3D CARD CENTER */
     .hero-3d-container {
+        margin: 0 auto;
         max-width: 260px;
     }
 }
