@@ -176,3 +176,13 @@
         window.addEventListener('load', () => {
             init3DBackground();
         });
+
+        // themes mode
+        const toggle = document.getElementById("themeToggle");
+        const body = document.body;
+
+        toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            body.classList.toggle("light");
+            body.classList.toggle("dark");
+        });

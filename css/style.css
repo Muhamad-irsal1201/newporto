@@ -720,3 +720,46 @@
                 gap: 2rem;
             }
         }
+        /* themes mode */
+        body.light {
+        --deep-space: #f4f6fb;
+        --space-dark: #ffffff;
+        --space-gray: #eaeef5;
+
+        --glass-white: rgba(0, 0, 0, 0.05);
+        --glass-border: rgba(0, 0, 0, 0.1);
+
+        --gradient-dark: linear-gradient(135deg, #f4f6fb, #ffffff);
+
+        color: #111;
+        }
+
+        body.light .nav-link {
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        body.light .nav-link:hover {
+            color: var(--electric-blue);
+        }
+
+        body.light .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .theme-toggle i {
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        /* Dark → Moon */
+        body.dark .theme-toggle i::before {
+            content: "\f186"; /* fa-moon */
+        }
+
+        /* Light → Sun */
+        body.light .theme-toggle i::before {
+            content: "\f185"; /* fa-sun */
+        }
+
+
+        
