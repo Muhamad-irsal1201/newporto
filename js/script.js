@@ -196,59 +196,210 @@
         });
 
         // language
-        const translations = {
-    en: {
-        hero_title: "Building Digital Experiences That Inspire & Transform",
-        hero_desc: "I'm Muhamad Irsal, a passionate Developer specializing in modern web technologies.",
-        about_title: "About Me",
-        projects_title: "Projects",
-        contact_title: "Contact Me"
+       /* ================================
+   TRANSLATION (i18n)
+================================ */
+
+const translations = {
+  en: {
+    hero: {
+      title: "Building Digital Experiences That Inspire & Transform",
+      desc: "I'm Muhamad Irsal, a passionate Developer specializing in modern web technologies, 3D graphics, and interactive experiences that push boundaries."
     },
 
-    id: {
-        hero_title: "Membangun Pengalaman Digital yang Menginspirasi & Berdampak",
-        hero_desc: "Saya Muhamad Irsal, seorang Developer yang fokus pada teknologi web modern.",
-        about_title: "Tentang Saya",
-        projects_title: "Proyek",
-        contact_title: "Hubungi Saya"
+    about: {
+      title: "About Me",
+      subtitle: "Crafting digital solutions with passion and precision"
     },
 
-    jp: {
-        hero_title: "人々を感動させ、変革するデジタル体験を構築",
-        hero_desc: "私はムハマド・イルサル。最新のWeb技術を専門とする開発者です。",
-        about_title: "自己紹介",
-        projects_title: "プロジェクト",
-        contact_title: "お問い合わせ"
+    skills: {
+      title: "Technical Expertise",
+      subtitle: "Mastering the tools and technologies that power modern digital experiences"
+    },
+
+    projects: {
+      title: "Featured Projects",
+      subtitle: "Showcasing innovative solutions that blend creativity with technology"
+    },
+
+    experience: {
+      title: "Experience & Education",
+      subtitle: "My journey through technology and education",
+      e1: {
+        role: "IT Mentor & Educator",
+        company: "Wowlab Japan",
+        date: "2025 - Present",
+        desc: "Guiding Japanese students in IT career development and technical skills."
+      },
+      e2: {
+        role: "Full Stack Developer",
+        company: "Freelance & Contract",
+        date: "2023 - Present",
+        desc: "Developing web applications and digital solutions for various clients."
+      },
+      e3: {
+        role: "Bachelor's in Information Technology",
+        company: "University Graduate",
+        date: "2021 - 2025",
+        desc: "Specialized in web technologies and software development."
+      }
+    },
+
+    contact: {
+      title: "Get In Touch",
+      subtitle: "Let's create something amazing together"
+    },
+
+    footer: {
+      desc: "Creating exceptional digital experiences through innovative web development and creative design solutions."
     }
+  },
+
+  id: {
+    hero: {
+      title: "Membangun Pengalaman Digital yang Menginspirasi & Berdampak",
+      desc: "Saya Muhamad Irsal, seorang Developer yang berfokus pada teknologi web modern, grafis 3D, dan pengalaman interaktif."
+    },
+
+    about: {
+      title: "Tentang Saya",
+      subtitle: "Menciptakan solusi digital dengan semangat dan presisi"
+    },
+
+    skills: {
+      title: "Keahlian Teknis",
+      subtitle: "Menguasai teknologi yang mendukung pengalaman digital modern"
+    },
+
+    projects: {
+      title: "Proyek Unggulan",
+      subtitle: "Menampilkan solusi inovatif yang menggabungkan kreativitas dan teknologi"
+    },
+
+    experience: {
+      title: "Pengalaman & Pendidikan",
+      subtitle: "Perjalanan saya di dunia teknologi dan pendidikan",
+      e1: {
+        role: "Mentor & Edukator IT",
+        company: "Wowlab Jepang",
+        date: "2025 - Sekarang",
+        desc: "Membimbing siswa Jepang dalam pengembangan karier IT dan keterampilan teknis."
+      },
+      e2: {
+        role: "Full Stack Developer",
+        company: "Freelance & Kontrak",
+        date: "2023 - Sekarang",
+        desc: "Mengembangkan aplikasi web dan solusi digital untuk berbagai klien."
+      },
+      e3: {
+        role: "Sarjana Teknologi Informasi",
+        company: "Lulusan Universitas",
+        date: "2021 - 2025",
+        desc: "Berfokus pada teknologi web dan pengembangan perangkat lunak."
+      }
+    },
+
+    contact: {
+      title: "Hubungi Saya",
+      subtitle: "Mari ciptakan sesuatu yang luar biasa bersama"
+    },
+
+    footer: {
+      desc: "Menciptakan pengalaman digital berkualitas melalui pengembangan web inovatif dan desain kreatif."
+    }
+  },
+
+  jp: {
+    hero: {
+      title: "人々を感動させ、変革するデジタル体験を構築",
+      desc: "私はムハマド・イルサル。最新のWeb技術、3Dグラフィックス、インタラクティブ体験を専門とする開発者です。"
+    },
+
+    about: {
+      title: "自己紹介",
+      subtitle: "情熱と正確さでデジタルソリューションを構築"
+    },
+
+    skills: {
+      title: "技術スキル",
+      subtitle: "現代のデジタル体験を支える技術を習得"
+    },
+
+    projects: {
+      title: "主なプロジェクト",
+      subtitle: "創造性と技術を融合した革新的なソリューション"
+    },
+
+    experience: {
+      title: "経験・学歴",
+      subtitle: "テクノロジーと教育における私の歩み",
+      e1: {
+        role: "ITメンター・教育者",
+        company: "Wowlab Japan",
+        date: "2025年〜現在",
+        desc: "日本人学生にITキャリアと技術スキルを指導。"
+      },
+      e2: {
+        role: "フルスタック開発者",
+        company: "フリーランス・契約",
+        date: "2023年〜現在",
+        desc: "様々なクライアント向けにWebアプリケーションを開発。"
+      },
+      e3: {
+        role: "情報技術学士",
+        company: "大学卒業",
+        date: "2021年〜2025年",
+        desc: "Web技術とソフトウェア開発を専攻。"
+      }
+    },
+
+    contact: {
+      title: "お問い合わせ",
+      subtitle: "一緒に素晴らしいものを作りましょう"
+    },
+
+    footer: {
+      desc: "革新的なWeb開発とクリエイティブなデザインで卓越したデジタル体験を創造。"
+    }
+  }
 };
 
+/* ================================
+   APPLY TRANSLATION
+================================ */
+
 function setLanguage(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.innerText = translations[lang][key];
-        }
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const keys = el.dataset.i18n.split(".");
+    let text = translations[lang];
+
+    keys.forEach(k => {
+      if (text) text = text[k];
     });
 
-    localStorage.setItem("language", lang);
+    if (text) el.innerText = text;
+  });
+
+  localStorage.setItem("lang", lang);
 }
 
+/* ================================
+   LANGUAGE BUTTON EVENT
+================================ */
+
 document.querySelectorAll(".lang-switcher button").forEach(btn => {
-    btn.addEventListener("click", () => {
-        setLanguage(btn.dataset.lang);
-    });
+  btn.addEventListener("click", () => {
+    const lang = btn.dataset.lang;
+    setLanguage(lang);
+  });
 });
 
-window.addEventListener("load", () => {
-    const savedLang = localStorage.getItem("language") || "en";
-    setLanguage(savedLang);
-});
+/* ================================
+   INIT DEFAULT LANGUAGE
+================================ */
 
-document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-  const key = el.getAttribute("data-i18n-placeholder");
-  if (translations[lang][key]) {
-    el.placeholder = translations[lang][key];
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "id";
+  setLanguage(savedLang);
 });
-
 
