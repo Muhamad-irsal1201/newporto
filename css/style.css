@@ -1,4 +1,22 @@
 :root {
+
+            /* Light Mode */
+            --bg-main: #f9fafb;
+            --bg-card: #ffffff;
+            --text-main: #111827;
+            --text-secondary: #4b5563;
+            --border-color: #e5e7eb;
+            --accent: #22d3ee;
+            }
+
+            [data-theme="dark"] {
+            --bg-main: #0f172a;
+            --bg-card: #020617;
+            --text-main: #f8fafc;
+            --text-secondary: rgba(255,255,255,0.65);
+            --border-color: #1e293b;
+            --accent: #22d3ee;
+
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.7);
             --navbar-height: 96px;
@@ -47,8 +65,8 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--gradient-dark);
-            color: var(--text-primary);
+           background: var(--bg-main);
+            color: var(--text-main);
             overflow-x: hidden;
             position: relative;
             min-height: 100vh;
@@ -483,6 +501,13 @@
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
             cursor: pointer;
+            background: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .project-card p {
+        color: var(--text-secondary);
         }
         
         .project-card:hover {
@@ -543,8 +568,14 @@
             padding-left: 80px;
             padding-bottom: 3rem;
             position: relative;
+            background: var(--bg-card);
+            color: var(--text-main);
         }
         
+        .timeline-item span,
+        .timeline-item p {
+        color: var(--text-secondary);
+        }
         .timeline-dot {
             position: absolute;
             left: 22px;
@@ -597,6 +628,13 @@
             padding: 3rem;
         }
         
+        .contact-form input,
+        .contact-form textarea {
+        background: var(--bg-card);
+        color: var(--text-main);
+        border: 1px solid var(--border-color);
+        }
+
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -624,6 +662,8 @@
             padding: 4rem 2rem;
             border-top: 1px solid var(--glass-border);
             margin-top: 4rem;
+            background: var(--bg-card);
+            color: var(--text-secondary);
         }
         
         .footer-content {
@@ -810,6 +850,11 @@
         body.light p {
          color: var(--text-secondary);
         }
+
+        .text-secondary {
+         color: var(--text-secondary);
+        }
+
 
 
 
