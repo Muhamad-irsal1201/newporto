@@ -408,32 +408,14 @@ document.addEventListener("DOMContentLoaded", () => {
    MOBILE TOOLS TOGGLE
 ================================ */
 
-const toolsToggle = document.getElementById("toolsToggle");
-const toolsMenu = document.querySelector(".tools-menu");
+// ===============================
+// MOBILE NAVBAR TOGGLE
+// ===============================
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
 
-toolsToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toolsMenu.classList.toggle("active");
-});
-
-/* tutup kalau klik di luar */
-document.addEventListener("click", () => {
-    toolsMenu.classList.remove("active");
-});
-
-function toggleTheme(e) {
-    e.preventDefault();
-    document.body.classList.toggle("light");
-    document.body.classList.toggle("dark");
-}
-
-document.getElementById("themeToggle")?.addEventListener("click", toggleTheme);
-document.getElementById("themeToggleMobile")?.addEventListener("click", toggleTheme);
-
-document.querySelectorAll("[data-lang]").forEach(btn => {
-    btn.addEventListener("click", () => {
-        setLanguage(btn.dataset.lang);
-    });
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
 });
 
 
