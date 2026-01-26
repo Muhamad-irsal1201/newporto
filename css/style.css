@@ -46,12 +46,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-        html, body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-        }
         
         html {
             scroll-behavior: smooth;
@@ -1026,13 +1020,7 @@
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-  .navbar:hover .nav-container {
-    transform: none !important;
-  }
-}
-
-
+    
 
 
 
