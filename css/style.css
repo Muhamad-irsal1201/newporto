@@ -46,6 +46,12 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
         
         html {
             scroll-behavior: smooth;
@@ -1020,76 +1026,51 @@
         cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+  .navbar:hover .nav-container {
+    transform: none !important;
+  }
+}
 
-    /* ===============================
-   MOBILE CENTER FIX (ALL DEVICES)
-   =============================== */
 @media (max-width: 768px) {
 
-  /* Kurangi padding section biar simetris */
   section,
   .footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* Paksa semua container benar-benar center */
-  .hero-container,
+  section > *,
+  .footer > * {
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   .about-grid,
   .skills-grid,
   .projects-grid,
   .contact-container,
-  .footer-content,
-  .timeline {
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .timeline,
+  .footer-content {
     width: 100%;
-    max-width: 100%;
-  }
-
-  /* About */
-  .about-content {
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-stats {
     justify-items: center;
-    text-align: center;
+    align-items: center;
   }
 
-  /* Skills & Projects */
-  .skill-category,
-  .project-card {
-    text-align: center;
-  }
-
-  /* Contact */
+  /* teks benar-benar tengah */
+  .about-content,
+  .about-text,
+  .project-content,
+  .footer-content,
   .contact-container {
     text-align: center;
   }
+}
 
-  .contact-method {
-    justify-content: center;
-  }
-
-  /* Footer BENAR-BENAR TENGAH */
-  .footer-content {
-    text-align: center;
-  }
-
-  .footer-desc {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-links,
-  .footer-services {
-    align-items: center;
+@media (max-width: 768px) {
+  * {
+    transform: none !important;
   }
 }
 
