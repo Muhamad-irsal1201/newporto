@@ -949,4 +949,61 @@
         }
 
 
+        /* ===============================
+   MOBILE TOOLS (THEME + LANG)
+================================ */
+
+.mobile-tools {
+    display: none;
+    position: relative;
+}
+
+.tools-toggle {
+    background: transparent;
+    border: none;
+    color: var(--neon-cyan);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.tools-menu {
+    position: absolute;
+    right: 0;
+    top: 140%;
+    background: rgba(15, 20, 35, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 160px;
+    z-index: 999;
+}
+
+.tools-menu a,
+.tools-menu button {
+    width: 100%;
+    text-align: left;
+}
+
+/* ===============================
+   RESPONSIVE RULE
+================================ */
+
+@media (max-width: 992px) {
+    /* Desktop items hidden */
+    .theme-toggle,
+    .lang-switcher {
+        display: none;
+    }
+
+    /* Mobile toggle shown */
+    .mobile-tools {
+        display: block;
+    }
+}
+
+
 

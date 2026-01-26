@@ -403,3 +403,37 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(savedLang);
 });
 
+
+/* ===============================
+   MOBILE TOOLS TOGGLE
+================================ */
+
+const toolsToggle = document.getElementById("toolsToggle");
+const toolsMenu = document.querySelector(".tools-menu");
+
+if (toolsToggle && toolsMenu) {
+    toolsToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toolsMenu.style.display =
+            toolsMenu.style.display === "flex" ? "none" : "flex";
+    });
+
+    document.addEventListener("click", () => {
+        toolsMenu.style.display = "none";
+    });
+}
+
+/* ===============================
+   SYNC THEME TO MOBILE BUTTON
+================================ */
+
+const themeToggleMobile = document.getElementById("themeToggleMobile");
+
+if (themeToggleMobile) {
+    themeToggleMobile.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.body.classList.toggle("light");
+        document.body.classList.toggle("dark");
+    });
+}
+
