@@ -404,18 +404,47 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/* ===============================
-   MOBILE TOOLS TOGGLE
-================================ */
 
 // ===============================
-// MOBILE NAVBAR TOGGLE
+// MOBILE TOOLS TOGGLE
 // ===============================
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
+const toolsToggle = document.getElementById("toolsToggle");
+const toolsMenu = document.querySelector(".tools-menu");
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+toolsToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toolsMenu.classList.toggle("active");
+});
+
+// klik di dalam menu tidak menutup
+toolsMenu.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+
+// klik di luar menu → tutup
+document.addEventListener("click", () => {
+    toolsMenu.classList.remove("active");
+});
+
+// ===============================
+// THEME TOGGLE
+// ===============================
+function toggleTheme(e) {
+    e.preventDefault();
+    document.body.classList.toggle("light");
+    document.body.classList.toggle("dark");
+}
+
+document.getElementById("themeToggle")?.addEventListener("click", toggleTheme);
+document.getElementById("themeToggleMobile")?.addEventListener("click", toggleTheme);
+
+// ===============================
+// LANGUAGE SWITCHER
+// ===============================
+document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        setLanguage(btn.dataset.lang);
+    });
 });
 
 
