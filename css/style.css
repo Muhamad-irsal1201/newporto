@@ -963,16 +963,16 @@
 /* ===== MOBILE MODE ===== */
 @media (max-width: 768px) {
 
-    /* sembunyikan tools desktop */
-    .theme-toggle,
-    .lang-switcher {
+    /* sembunyikan HANYA tools desktop */
+    .nav-container > .theme-toggle,
+    .nav-container > .lang-switcher {
         display: none !important;
     }
 
-    /* tampilkan toggle mobile */
     .mobile-tools {
         display: block;
     }
+}
 
     .tools-toggle {
         background: transparent;
@@ -1019,7 +1019,7 @@
         border-radius: 6px;
         cursor: pointer;
     }
-}
+
 
 
 
