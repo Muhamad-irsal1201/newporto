@@ -411,29 +411,29 @@ document.addEventListener("DOMContentLoaded", () => {
 const toolsToggle = document.getElementById("toolsToggle");
 const toolsMenu = document.querySelector(".tools-menu");
 
-if (toolsToggle && toolsMenu) {
-    toolsToggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toolsMenu.style.display =
-            toolsMenu.style.display === "flex" ? "none" : "flex";
-    });
+toolsToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toolsMenu.classList.toggle("active");
+});
 
-    document.addEventListener("click", () => {
-        toolsMenu.style.display = "none";
-    });
+/* tutup kalau klik di luar */
+document.addEventListener("click", () => {
+    toolsMenu.classList.remove("active");
+});
+
+function toggleTheme(e) {
+    e.preventDefault();
+    document.body.classList.toggle("light");
+    document.body.classList.toggle("dark");
 }
 
-/* ===============================
-   SYNC THEME TO MOBILE BUTTON
-================================ */
+document.getElementById("themeToggle")?.addEventListener("click", toggleTheme);
+document.getElementById("themeToggleMobile")?.addEventListener("click", toggleTheme);
 
-const themeToggleMobile = document.getElementById("themeToggleMobile");
-
-if (themeToggleMobile) {
-    themeToggleMobile.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.body.classList.toggle("light");
-        document.body.classList.toggle("dark");
+document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        setLanguage(btn.dataset.lang);
     });
-}
+});
+
 

@@ -949,59 +949,75 @@
         }
 
 
-        /* ===============================
-   MOBILE TOOLS (THEME + LANG)
-================================ */
+ /* ===== NAVBAR TOOLS ===== */
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+}
 
 .mobile-tools {
     display: none;
     position: relative;
 }
 
-.tools-toggle {
-    background: transparent;
-    border: none;
-    color: var(--neon-cyan);
-    font-size: 1.4rem;
-    cursor: pointer;
-}
+/* ===== MOBILE MODE ===== */
+@media (max-width: 768px) {
 
-.tools-menu {
-    position: absolute;
-    right: 0;
-    top: 140%;
-    background: rgba(15, 20, 35, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    border-radius: 14px;
-    padding: 1rem;
-    display: none;
-    flex-direction: column;
-    gap: 0.75rem;
-    min-width: 160px;
-    z-index: 999;
-}
-
-.tools-menu a,
-.tools-menu button {
-    width: 100%;
-    text-align: left;
-}
-
-/* ===============================
-   RESPONSIVE RULE
-================================ */
-
-@media (max-width: 992px) {
-    /* Desktop items hidden */
+    /* sembunyikan tools desktop */
     .theme-toggle,
     .lang-switcher {
-        display: none;
+        display: none !important;
     }
 
-    /* Mobile toggle shown */
+    /* tampilkan toggle mobile */
     .mobile-tools {
         display: block;
+    }
+
+    .tools-toggle {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .tools-menu {
+        position: absolute;
+        top: 120%;
+        right: 0;
+        background: rgba(10, 14, 23, 0.95);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 14px;
+        padding: 1rem;
+        min-width: 160px;
+
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: 0.3s ease;
+    }
+
+    .tools-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .mobile-lang {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .mobile-lang button {
+        background: transparent;
+        border: 1px solid var(--glass-border);
+        color: white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        cursor: pointer;
     }
 }
 
