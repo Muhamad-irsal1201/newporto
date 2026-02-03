@@ -279,7 +279,7 @@
             margin: 0 auto;
             width: 100%;
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
+            grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
@@ -333,7 +333,7 @@
             height: 500px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             perspective: 1000px;
         }
         
@@ -348,8 +348,6 @@
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
             box-shadow: var(--shadow-elevated);
-            transform: translateX(-55%) translateZ(40px);
-            left: 50%;
         }
         
         .card-3d-1 {
@@ -358,7 +356,7 @@
         }
         
         .card-3d-2 {
-            transform: translateX(-100%) rotateY(8deg) translateZ(30px);
+            transform: rotateY(15deg) translateZ(30px);
             animation: float 6s ease-in-out infinite reverse;
             animation-delay: 1s;
              background-image: url("../img/profile.jpg");
