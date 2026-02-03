@@ -358,7 +358,7 @@
         }
         
         .card-3d-2 {
-            transform: translateX(-50%) rotateY(8deg) translateZ(30px);
+            transform: translateX(-70%) rotateY(8deg) translateZ(30px);
             animation: float 6s ease-in-out infinite reverse;
             animation-delay: 1s;
              background-image: url("../img/profile.jpg");
