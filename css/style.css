@@ -60,6 +60,12 @@
             position: relative;
             min-height: 100vh;
         }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         
         /* Background Polymorphic Shapes */
         .polymorphic-bg {
@@ -141,12 +147,14 @@
         }
         
         .nav-container {
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
              transition: transform 0.3s ease;
+             padding: 0;
         }
         
         .navbar:hover .nav-container {
@@ -1019,6 +1027,32 @@
         border-radius: 6px;
         cursor: pointer;
     }
+
+    section > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (hover: none) {
+    .navbar:hover .nav-container {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: calc(var(--navbar-height) + 1rem);
+        padding-bottom: 3rem;
+    }
+
+    .hero-container {
+        text-align: center;
+    }
+}
+
+
 
     
 
