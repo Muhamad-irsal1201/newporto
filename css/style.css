@@ -348,7 +348,7 @@
             transform-style: preserve-3d;
             transition: var(--transition-smooth);
             box-shadow: var(--shadow-elevated);
-            transform: translateX(-50%) translateZ(40px);
+            transform: translateX(-30%) translateZ(40px);
             left: 50%;
         }
         
